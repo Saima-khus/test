@@ -1,0 +1,49 @@
+1. First time github account crestion: easy, just go to website and create account
+
+2. First time registering the computer to github (you will have to do it once, but if you reset your computer, you will have to do it again) or adding ssh key to the github
+- generate a ssh key
+ssh-keygen -t ed25519 -C "your_email@saima.sultana.khusbu@gmail.com"
+- copy the generated shh key using terminal
+pbcopy < ~/.ssh/id_ed25519.pub
+- add the copied ssh key to the github (do it on the github website)
+
+there are 2 ways to create and make reposities available on the github:
+way 1: if you have already existing code/folder in your computer, then you will have create a repository on github and then connect the local folder with the created repository
+Create new repository and connect the repository with an existing folder on your computer
+
+1. Using terminal, from your existing folder, initialize git
+git init
+2. push this initiated folder (we should call it local repository) to an existing remote repository:
+git init -b main
+git add --all
+git commit -m "My first commit"
+git remote add origin git@github.com:saima-khus/Learn-Cpp.git
+git push -u origin main
+
+
+git remote add origin https://github.com/saima-khus/Learn-Cpp.git
+git branch -M main
+git push -u origin main
+
+
+way 2: if you have not written any code, then it is easy. First create a repository, then you can clone the repository in your computer
+
+
+
+
+
+
+normal activity:
+cloning an already created repository
+git clone git@github.com:Saima-khus/test.git
+
+git code:
+a) change something on the repository
+b) write the following commands from the terminal:
+
+git pull
+git add --all
+git commit -m "write some descriptive message"
+git push
+
+
